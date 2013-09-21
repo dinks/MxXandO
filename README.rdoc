@@ -1,19 +1,28 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Tic Tac Toe with Rails 4 -- Sample APP
 
 Things you may want to cover:
 
 * Ruby version
 
+  - ruby 2.0.0p247
+
 * System dependencies
+  - Redis
 
 * Configuration
+  - Uses SSE to pass Online Users
+  - Uses Rails-API
+  - Uses Handle Bars for some templating
+  - Uses Concerns
+  - Uses Statemachine to track user/game progress
 
 * Database creation
+  - Run Migration
 
 * Database initialization
+  - Not Needed
 
 * How to run the test suite
 
