@@ -1,0 +1,29 @@
+// Place all the styles related to the game controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$GameCellColor: #FFEEDD;
+$GameBackColor: #646322;
+
+.game-board {
+  background-color: $GameBackColor;
+  border: 1px solid $GameCellColor;
+  margin: 0 auto;
+
+  td {
+    width: 100px;
+    height: 100px;
+    border-right: 1px solid $GameCellColor;
+    border-bottom: 1px solid $GameCellColor;
+  }
+
+  td:nth-child(3n) {
+    border-right: 0px;
+  }
+
+  tr:nth-child(3n) {
+    td {
+      border-bottom: 0px;
+    }
+  }
+}

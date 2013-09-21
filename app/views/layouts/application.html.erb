@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MyXandO</title>
+
+    <link href="//netdna.bootstrapcdn.com/bootswatch/3.0.0/readable/bootstrap.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+    <%= stylesheet_link_tag  "application", media: "all", "data-turbolinks-track" => true %>
+
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+    <%= csrf_meta_tags %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%= tag :meta, name: :uuid, content: @_current_user.uuid %>
+  </head>
+  <body>
+    <%= render partial: "shared/navigation" %>
+    <div class="container">
+      <%= render partial: "shared/flash_messages" %>
+      <div class="row-fluid">
+        <div class="col-md-8 text-center">
+          <%= yield %>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="row-fluid">
+            <div id="users_online" class="col-md-12 text-center">
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+<h3>Online Users</h3>
+<table class="table table-striped">
+  <tr>
+    <th>Id/Name</th>
+  </tr>
+  {{#each online_users}}
+    <tr id="u_{{this}}">
+      <td>
+        {{this}}
+      </td>
+    </tr>
+  {{/each}}
+</table>
