@@ -54,7 +54,7 @@ GEM
       tilt
     hike (1.2.3)
     i18n (0.6.9)
-    jbuilder (1.5.3)
+    jbuilder (2.0.1)
       activesupport (>= 3.0.0)
       multi_json (>= 1.2.0)
     jquery-rails (3.0.4)
@@ -157,7 +157,7 @@ DEPENDENCIES
   coffee-rails
   factory_girl_rails
   handlebars_assets
-  jbuilder (~> 1.2)
+  jbuilder
   jquery-rails
   rails
   rails-api
